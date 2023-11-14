@@ -9,6 +9,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import logging
 from selenium.webdriver.remote.remote_connection import LOGGER
+from csv_to_xlsx import convert_csv_to_xlsx
 
 
 LOGGER.setLevel(logging.WARNING)
@@ -125,3 +126,6 @@ with open('output.csv', 'w') as outputFile:
 with open('log.txt', 'w') as logFile:
     for line in log:
         logFile.write(line+"\n")
+
+# convert csv file to xlsx for easy reading
+convert_csv_to_xlsx('output.csv')

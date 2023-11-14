@@ -1,0 +1,29 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+
+# PyCharm files
+.idea/
+
+# VSCode files
+.vscode/
+
+# Jupyter Notebook files
+.ipynb_checkpoints/
+
+# venv
+.venv/
+
+# output files
+output.csv
+output.xlsx
+log.txt
