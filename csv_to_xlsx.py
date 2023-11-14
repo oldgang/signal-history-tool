@@ -6,4 +6,5 @@ def convert_csv_to_xlsx(filename):
     filename += ".xlsx"
     read_file.to_excel(filename, index = None, header=True)
 
-convert_csv_to_xlsx('output.csv')
+if __name__ == "__main__":
+    convert_csv_to_xlsx('output.csv')
